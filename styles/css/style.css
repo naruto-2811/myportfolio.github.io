@@ -381,31 +381,24 @@ p {
 }
 
  
-
+.purple{
+  color: #682ae9;
+}
 
 /* About US Details
 --------------------------------*/
 
 #about {
   background-color: #0e1212;
-  padding: 60px 0 40px 0;
+  padding: 150px 0 40px 0;
   position: relative; 
-  height: 100vh;
+  height: 80%;
 }
 
-#about::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background-color: #0e1212;
-  z-index: 9;
-}
+ 
 
 #about .container {
-  position: relative;
+  position:static;
   z-index: 10;
 }
 
