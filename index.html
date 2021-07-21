@@ -18,11 +18,25 @@
     <link href="styles/css/style.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link href="styles/css/sample.css" rel="stylesheet">
+    <link href="styles/css/rubix.css" rel="stylesheet">
+    
     <style>
     @media only screen
 and (min-width : 420px) {
   .margin-left-15{
     margin-left: 20px;
+  }
+  .rubix{
+    margin-top:100px;   
+  }
+}
+
+@media only screen
+and (max-width : 420px) {
+  .rubix{
+    margin-top:100px; 
+    width: 100vw;
+    height: 100vh;  
   }
 }
 
@@ -36,8 +50,11 @@ and (max-width : 360px) {
   .margin-top_made{
       margin-top:15px;
   }
-
- 
+  .rubix{
+    margin-top:100px;
+    width: 100vw;
+    height: 100vh;
+  }
 }
 
 .align{
@@ -196,6 +213,48 @@ and (max-width : 360px) {
     </section>
 
   
+    <section id="about">
+        <div class="container rubix"> 
+          
+            <div class="row ">
+                <div class="col-lg-11">
+                    <span class="text-wrapper">
+                        <h1 class="colour" data-aos="flip-up">{ <span class="purple">$art</span> }</h1>
+                        <h1 class="colour" data-aos="flip-down">{ <span class="purple">$rubix</span> }</h1>
+                        <h1 class="colour" data-aos="flip-up">{ <span class="purple">$guitar</span> }</h1>
+                        <h6 style="margin-left: 25px;">//background_hobbies.css</h6>
+                        <h6> <span class="colour">Note:</span> guitar will sound tap on it</h6>
+                      </span>
+                </div>
+                <div class="col-lg-1 hobbies" >
+                    <div class="circle" >
+                        <div class="cube-wrap">
+                          <div class="ext-cube">
+                            <div class="side ext-back"></div>
+                            <div class="side ext-left"></div>
+                            <div class="side ext-right"></div>
+                            <div class="side ext-top"></div>
+                            <div class="side ext-bottom"></div>
+                            <div class="side ext-front"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <img src="styles/img/pallet1.png" height="70px" width="70px" class="vert-move">
+                      <img src="styles/img/guitar.svg" height="250px" width="150px" class="vert-guitar guitars" id="guitar" >
+                    </div>                 
+                </div>
+          </div>
+    </section>
+
+
+   
+
+
+
+
+
+
+
 
     <section id="about">
         <div class="container">
@@ -253,6 +312,7 @@ and (max-width : 360px) {
                                         <h5 class="colour"><span>< / ></span></h5><br>
                                         <li>Bootstrap</li>
                                         <li>js</li>
+                                        <li>Sass</li>
                                         <li>anime.js</li>
                                         <li>image editor</li>
                                         <li>Git</li>
@@ -454,6 +514,38 @@ anime.timeline({loop: true})
           });
           
           });
+      </script>
+
+      
+      <script>
+        var number = 0;
+        $('#guitar').on("click", function () {
+            console.log('mouseClick = ' + number);
+            number++;
+            if (number === 1) {
+                var audio = new Audio('https://raw.githubusercontent.com/212mr/m15final/master/music/lute01.mp3');
+                audio.play();
+            }
+            else if (number === 2) {
+                var audio = new Audio('https://raw.githubusercontent.com/212mr/m15final/master/music/lute02.mp3');
+                audio.play();
+            }
+            else if (number === 3) {
+                var audio = new Audio('https://raw.githubusercontent.com/212mr/m15final/master/music/lute03.mp3');
+                audio.play();
+            }
+            else if (number === 4) {
+                var audio = new Audio('https://raw.githubusercontent.com/212mr/m15final/master/music/lute04.mp3');
+                audio.play();
+            }
+            else if (number === 5) {
+                var audio = new Audio('https://raw.githubusercontent.com/212mr/m15final/master/music/lute05.mp3');
+                audio.play();
+            }
+            else {
+                number=0;
+            }
+        });
       </script>
 </body>
 </html>
