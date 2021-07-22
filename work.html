@@ -175,6 +175,18 @@ margin-top: 10px;
                       </div>
                     </div>
 
+                    <div class="row margin-top-30 margin-down-20 "> 
+                      <div class="col-md-4">
+                        <a href="index.html" > <img src="styles/img/portfolio.png" class="img-fluid rounded "> </a>
+                      </div>
+                      <div class="col-md-6 ml-auto margin-small">                    
+                      <h3 class="purple">< / My Portfolio > </h3>
+                      <h6 class="colour">( 2021/jul/21 - 2021/jul/23  )</h6>
+                      <h6> /*A high-performance, Responsive website that uses the power 
+                        of creative SVG, Greensock (GSAP) & ScrollMagic powered animations for enriching user experience. */</h6>
+                      </div>
+                    </div>
+
                    
               </div>            
             </div>  
@@ -189,8 +201,7 @@ margin-top: 10px;
   
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-  <!-- Uncomment below i you want to use a preloader -->
-  <!-- <div id="preloader"></div> -->
+
  
   <script src="styles/plugins/jquery/jquery.min.js"></script>
   <script src="styles/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -204,59 +215,6 @@ margin-top: 10px;
  
 
 <script>
-  jQuery(document).ready(function($) {
-            "use strict";
-            //  TESTIMONIALS CAROUSEL HOOK
-            $('#customers-testimonials').owlCarousel({
-                loop: true,
-                center: true,
-                items: 3,
-                margin: 0,
-                autoplay: true,
-                dots:true,
-                autoplayTimeout: 8500,
-                smartSpeed: 450,
-                responsive: {
-                  0: {
-                    items: 1
-                  },
-                  768: {
-                    items: 2
-                  },
-                  1170: {
-                    items: 3
-                  }
-                }
-            });
-          });
-
-var body = document.body;
-var html = document.documentElement;
-
-var height = 0;
-var h = 0;
-
-var initiateHeights = function () {
-  height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
-  h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-  console.log("heights were initialised:", height, h);
-}
-
-initiateHeights();
-
-var resize = function (e) {
-  var scrolled = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
-  height > 0 ? e[0].style.width = scrolled/(height-h) * 100 + "%" : e.style.width = 0 + "%";
-}
-
-document.onscroll = function () {
-  resize(document.getElementsByClassName("indicator"));
-};
-
-window.onresize = function () {
-  initiateHeights();
-}
-
 // Wrap every letter in a span
 var textWrapper = document.querySelector('.ml9 .letters');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");

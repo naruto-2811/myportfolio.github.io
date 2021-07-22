@@ -34,9 +34,9 @@ and (min-width : 1260px) {
   background-image: url(styles/img/abhi12.jpg);
   background-repeat: no-repeat;
   background-size: 50% auto;
- 
-
  }
+
+ 
 .margin-top-35{
   margin-top: 90px;
 }
@@ -56,8 +56,9 @@ and (max-width : 450px) {
  .align{
    margin-left: 30px;
  }
- 
 }
+
+
 </style>
  
 
@@ -91,6 +92,9 @@ and (max-width : 450px) {
     <section id="about fi">  
       <div class="container margin-top-35">  
        <div class="row">
+        <!-- <div class="col-m-12">
+          <img src="styles/img/abhi12.jpg" class="img-fluid align-img">
+         </div> -->
         <div class="col-md-12 col-sm-12">
           <div class="container flip">
             <div class="row">
@@ -103,7 +107,7 @@ and (max-width : 450px) {
                     about()  </h1>  
                     <h4 class="experience"> <a href="https://www.linkedin.com/in/abhilashmr2811/" target="_blank"><i class="fab fa-linkedin fa-1x" style="color: #682ae9; "></i></a href>
                       <a href="https://github.com/naruto-2811/" target="_blank" ><i class="fab fa-github fa-1x" style="color: #682ae9; "></i></a>  Download my 
-                      <a href="https://drive.google.com/file/d/1xxmg6BTIHWatw7LWW-YOdEdef_6ETBFi/view?usp=sharing" target="_blank" class="badge badge-pill badge-primary"style="background-color:#682ae9;">resume</a>  </h4> 
+                      <a href="https://drive.google.com/file/d/1xxmg6BTIHWatw7LWW-YOdEdef_6ETBFi/view?usp=sharing" target="_blank" class="badge badge-pill badge-primary"style="background-color:#682ae9;"><span><i class="fa fa-download" style="color:white"></i></span> resume</a>  </h4> 
                   <h6>I am a creative frontend developer, designer and artist. From Mysuru, based in Karnataka.<br> 
                     // 3+ years of experience</h6><br><br> 
                     <h5 class="colour">// main skills </h5><br>     
@@ -201,58 +205,6 @@ and (max-width : 450px) {
  
 
 <script>
-  jQuery(document).ready(function($) {
-            "use strict";
-            //  TESTIMONIALS CAROUSEL HOOK
-            $('#customers-testimonials').owlCarousel({
-                loop: true,
-                center: true,
-                items: 3,
-                margin: 0,
-                autoplay: true,
-                dots:true,
-                autoplayTimeout: 8500,
-                smartSpeed: 450,
-                responsive: {
-                  0: {
-                    items: 1
-                  },
-                  768: {
-                    items: 2
-                  },
-                  1170: {
-                    items: 3
-                  }
-                }
-            });
-          });
-
-var body = document.body;
-var html = document.documentElement;
-
-var height = 0;
-var h = 0;
-
-var initiateHeights = function () {
-  height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
-  h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-  console.log("heights were initialised:", height, h);
-}
-
-initiateHeights();
-
-var resize = function (e) {
-  var scrolled = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
-  height > 0 ? e[0].style.width = scrolled/(height-h) * 100 + "%" : e.style.width = 0 + "%";
-}
-
-document.onscroll = function () {
-  resize(document.getElementsByClassName("indicator"));
-};
-
-window.onresize = function () {
-  initiateHeights();
-}
 
 // Wrap every letter in a span
 var textWrapper = document.querySelector('.ml9 .letters');
