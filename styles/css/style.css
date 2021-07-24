@@ -876,6 +876,12 @@ and (min-width : 1260px) {
   transform-box: fill-box;
 }
 
+#face {
+  animation: rotate_cat 2s infinite alternate;
+  transform-origin: right;
+  transform-box: fill-box;
+}
+
 #leaf {
   animation: rotate_leaf 5s infinite alternate;
   transform-origin: bottom;
