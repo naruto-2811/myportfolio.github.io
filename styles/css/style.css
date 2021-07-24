@@ -861,3 +861,51 @@ and (min-width : 1260px) {
 }
 
 
+
+
+
+ 
+#Right_leg {
+  animation: rotate_right_leg 2s infinite alternate;    
+  transform-box: fill-box;
+}
+
+#cat_face_tail {
+  animation: rotate_cat 2s infinite alternate;
+  transform-origin: right;
+  transform-box: fill-box;
+}
+
+#leaf {
+  animation: rotate_leaf 5s infinite alternate;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+@keyframes rotate_cat {
+  0% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
+@keyframes rotate_right_leg {
+  0% {
+    transform: rotate(8deg);
+  }
+  70% {
+    transform: rotate(-5deg);
+  }
+}
+
+@keyframes rotate_leaf {
+  0% {
+    transform: rotate(4deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
